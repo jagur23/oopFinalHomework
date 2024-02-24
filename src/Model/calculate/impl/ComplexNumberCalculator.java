@@ -5,9 +5,7 @@ import Model.calculate.Calculable;
 
 public class ComplexNumberCalculator implements Calculable<ComplexNumber> {
 
-    private ComplexNumber result;
-
-    public ComplexNumberCalculator(){};
+    public ComplexNumberCalculator(){}
 
     @Override
     public ComplexNumber sum(ComplexNumber a, ComplexNumber b) {

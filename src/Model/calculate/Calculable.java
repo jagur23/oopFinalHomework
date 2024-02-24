@@ -1,6 +1,6 @@
 package Model.calculate;
 
-public interface Calculable<T> {
+public interface Calculable<T>{
 
     T sum(T a, T b);
 

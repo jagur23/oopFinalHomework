@@ -1,9 +1,8 @@
 package Model.calculate.impl;
 
 public class ComplexNumber {
-
-    private double realPart;
-    private double imaginaryPart;
+    private final double realPart;
+    private final double imaginaryPart;
 
 
     public ComplexNumber(double realPart, double imaginaryPart){
@@ -21,6 +20,10 @@ public class ComplexNumber {
 
     @Override
     public String toString() {
-        return realPart + "+" + imaginaryPart;
+        if(imaginaryPart > 0) {
+            return realPart + "+" + imaginaryPart + "i";
+        } else if (imaginaryPart == 0) {
+            return realPart + "";
+        } else return realPart + "" + imaginaryPart + "i";
     }
 }
